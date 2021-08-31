@@ -3,9 +3,10 @@ This is a machine learning project that aims to classify news as real or fake. T
 
 Steps taken to build the model: 
 1. Downloading the dataset from Kaggle in a pandas dataframe. 
-2. Performing exploratory data analysis on the dataframe to extract insights. 
-3. Splitting our data into train and test sets
-4. Passing out train set to TfidfVectorizer. This vectorizer converts a collection of raw documents to a matrix of TF-IDF features. These features are defined as follows: 
+2. Cleaning and preprocessing the data. 
+3. Performing exploratory data analysis on the dataframe to extract insights. 
+4. Splitting our data into train and test sets.
+5. Passing out train set to TfidfVectorizer. This vectorizer converts a collection of raw documents to a matrix of TF-IDF features. These features are defined as follows: 
     a. TF: term frequency, which is the frequency of the occurrence of a term in a document. 
     b. IDF: inverse document frequency, which measures the significance of the term over the entire corpus in such a way that terms such as 'and', 'what', etc. are given lower         significance.
     In formal mathematical terms, TF and IDF can be defined as follows, such that t is a term in a document d from a document set D:
